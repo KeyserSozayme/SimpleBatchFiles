@@ -16,3 +16,9 @@ A script I don't really use that just shut down your computer after 30 seconds. 
 
 - tester -
 Just a batch file I use to test commands I'm learning.
+
+- EvilFolder-er -
+The same as Folder-er but is places randomly generated files in each folder of choosable size, this is intended to make it difficult to delete all of the folders. During which time you can think about the repurcussions your, not locking of your PC can have on both your data, and your company's data.
+
+- FolderWrapper -
+Copies Evil Folder-er to the TMP directory before running it. This makes attacks easier as you only need to be at the PC to setup the attack, then you can unplug your USB and the program will continue uninterrupted!
