@@ -7,7 +7,6 @@ SETLOCAL
 
 SET me=%~n0
 SET localDesktop=%USERPROFILE%\Desktop
-SET localTemp=%TMP% 
 SET varFolderAmount=500
 SET varFileAmount=500
 SET varFileSize=1024
