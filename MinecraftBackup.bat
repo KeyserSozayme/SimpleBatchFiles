@@ -1,15 +1,17 @@
+@ECHO OFF
+
 :: Change directory (across a disk) to C:
-cd /d C:\
+CD /D C:\
 
 :: Set Source and Destination Locations
-set copySource=%APPDATA%\.minecraft
-set copyDest=\\DC\MinecraftBackup
+SET copySource=%APPDATA%\.minecraft
+SET copyDest=\\DC\MinecraftBackup
 
-:: Do not output any text to the command line
-echo off
+ECHO Source     : %copySource%
+ECHO Destination: %copyDest%
 
 :: Copy the .minecraft directory to the backup directory
-robocopy "%copySource%" "%copyDest%\Backup %Date%" /xo /e /mir /z /log+:"%copyDest%\_Logs\Backup %DATE%.txt"
+ROBOCOPY "%copySource%" "%copyDest%\Backup %Date%" /XO /E /MIR /Z /LOG+:"%copyDest%\_Logs\Backup %DATE%.txt"
 
 ::Quit the file
-exit
+EXIT
